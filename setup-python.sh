@@ -59,9 +59,11 @@ pythonvirtualenv() {
 
 pythonbootstrap
 
+line
+
 if [ -f "requirements.txt" ]; then
   pythonvirtualenv "$(basename $(git rev-parse --show-toplevel))"
 else
-  echo "can't find requirements.txt"
+  f "can't find requirements.txt"
   exit 1
 fi
