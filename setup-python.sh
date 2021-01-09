@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
 
+if ! python3 -c "print('hello world')"; then
+  echo "can't use python3"
+  exit 1
+fi
+
+if ! pip3 --version; then
+  echo "can't use pip3"
+  exit 1
+fi
+
 e() {
   echo -e "\e[39m  $1"
 }
@@ -51,4 +61,7 @@ pythonbootstrap
 
 if [ -f "requirements.txt" ]; then
   pythonvirtualenv "$(basename $(git rev-parse --show-toplevel))"
+else
+  echo "can't find requirements.txt"
+  exit 1
 fi
