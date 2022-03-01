@@ -8,10 +8,10 @@ Also a requirements.txt file in your repo
 ## Usages
 setup python environment
 ``` bash
-bash <(curl -s https://raw.githubusercontent.com/mrscherrycoke/simple-python-virtualenv/master/setup-python.sh)
+bash <(curl -s https://raw.githubusercontent.com/iacgg/simple-python-virtualenv/master/setup-python.sh)
 ```
 
 setup directory environment
 ``` bash
-bash <(curl -s https://raw.githubusercontent.com/mrscherrycoke/simple-python-virtualenv/master/setup-direnv.sh)
+bash <(curl -s https://raw.githubusercontent.com/iacgg/simple-python-virtualenv/master/setup-direnv.sh)
 ```
